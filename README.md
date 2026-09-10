@@ -9,9 +9,9 @@ This project has two parts that plug into each other:
 
 | Folder | What it does | Status |
 |---|---|---|
-| `/` (root) — the **viewer** | A Three.js webpage that displays a `.ply` 3D scan so anyone can walk through it in a browser | ✅ Working |
-| `/colab` — the **live demo pipeline** | A ready-to-run Google Colab notebook that turns a video into a `.ply` file using a free GPU — no server needed | ✅ Working, good for demos |
-| `/backend` — the **production pipeline** | The same idea as `/colab`, but packaged to run automatically on a real, always-on GPU server (via the website's upload button) | 🚧 Built, not yet deployed |
+| `/` (root) — the **viewer** | A Three.js webpage that displays a `.ply` 3D scan so anyone can walk through it in a browser | Working |
+| `/colab` — the **live demo pipeline** | A ready-to-run Google Colab notebook that turns a video into a `.ply` file using a free GPU — no server needed |  Working, good for demos |
+| `/backend` — the **production pipeline** | The same idea as `/colab`, but packaged to run automatically on a real, always-on GPU server (via the website's upload button) |  Built, not yet deployed |
 
 **Want to demo the actual video → 3D process today, without deploying
 anything?** Open `/colab/RealMeta_Video_to_3D_Demo.ipynb` — it's free
@@ -40,7 +40,7 @@ the page also keeps a **"Load .ply directly"** fallback link, so the
 viewer half can still be tested/demoed on its own with a file you
 already have from Luma AI, Polycam, or a manual Colab run.
 
-### ⚠️ Current limitation — read this before demoing the upload flow
+### Current limitation — read this before demoing the upload flow
 
 The backend pipeline needs a real GPU to run (photogrammetry + Gaussian
 Splatting training is far too slow on a normal laptop CPU, and won't
