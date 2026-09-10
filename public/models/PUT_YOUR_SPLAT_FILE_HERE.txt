@@ -1,0 +1,9 @@
+Put your exported 3D scan file in this folder.
+
+1. Scan a room/exhibit with your phone (a slow, overlapping walkthrough video).
+2. Upload that video to Luma AI (lumalabs.ai) or Polycam (poly.cam).
+3. Wait for it to process — you'll get a downloadable file, usually .splat or .ply
+4. Download it and drop it in this folder (public/models/).
+5. Open src/main.js and change SPLAT_FILE to match your file's exact name,
+   e.g. '/models/museum-entrance.splat'
+6. Save, and the running dev server will reload automatically.

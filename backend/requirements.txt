@@ -1,0 +1,12 @@
+torch>=2.0.0
+torchvision
+numpy
+plyfile
+tqdm
+opencv-python-headless
+Pillow
+fastapi
+uvicorn[standard]
+python-multipart
+celery
+redis
